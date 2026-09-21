@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recherche mots clés</title>
+<style>
+ :root { --fg:#1a1a1a; --muted:#5a5a5a; --bg:#ffffff; --line:#e3e3e3; --accent:#1a5fb4; }
+ @media (prefers-color-scheme: dark) {
+   :root:not([data-theme="light"]) { --fg:#e8e8e8; --muted:#a8a8a8; --bg:#131313; --line:#2c2c2c; --accent:#7aa8e8; }
+ }
+ :root[data-theme="dark"] { --fg:#e8e8e8; --muted:#a8a8a8; --bg:#131313; --line:#2c2c2c; --accent:#7aa8e8; }
+ body { background:var(--bg); color:var(--fg); margin:0;
+        font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+ main { max-width:720px; margin:0 auto; padding:56px 16px 80px; }
+ h1 { font-size:1.8rem; margin:0 0 .3em; letter-spacing:-.01em; }
+ h2 { font-size:1.15rem; margin:2.2em 0 .5em; }
+ p, li { color:var(--fg); }
+ .sub { color:var(--muted); margin-top:0; }
+ a { color:var(--accent); }
+ nav { margin-top:3em; padding-top:1.2em; border-top:1px solid var(--line); font-size:.94rem; }
+ nav a { margin-right:1.2em; }
+ footer { margin-top:2.5em; color:var(--muted); font-size:.86rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Recherche mots clés</h1>
+  <p class="sub">Outil personnel d'étude de mots clés, utilisé avec l'API Google&nbsp;Ads.</p>
+
+  <h2>À quoi sert cette application</h2>
+  <p>
+    « Recherche mots clés » est un outil en ligne de commande que j'utilise pour
+    étudier le volume de recherche et la concurrence de mots clés en France,
+    dans le cadre de la préparation d'un projet de commerce en ligne.
+    Il interroge le service de planification de mots clés de l'API Google&nbsp;Ads
+    et enregistre les résultats dans des fichiers CSV, sur mon ordinateur.
+  </p>
+
+  <h2>Qui l'utilise</h2>
+  <p>
+    Moi seul, sur mon propre compte Google&nbsp;Ads. L'application n'est pas
+    distribuée, n'a pas d'autres utilisateurs et ne propose aucun service à des tiers.
+  </p>
+
+  <h2>Ce à quoi elle accède</h2>
+  <p>
+    Une seule autorisation est demandée&nbsp;:
+    <code>https://www.googleapis.com/auth/adwords</code>. Elle sert uniquement à
+    lire des estimations de mots clés. L'application ne crée aucune campagne,
+    ne modifie aucun paramètre et n'engage aucune dépense.
+  </p>
+
+  <nav>
+    <a href="./privacy.html">Règles de confidentialité</a>
+    <a href="./terms.html">Conditions d'utilisation</a>
+  </nav>
+  <footer>Contact&nbsp;: danjordan69100@gmail.com</footer>
+</main>
+</body>
+</html>
